@@ -11,6 +11,8 @@
 		AC3384E8280801F800835EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3384E7280801F800835EF4 /* ContentView.swift */; };
 		AC3384EA280801FB00835EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3384E9280801FB00835EF4 /* Assets.xcassets */; };
 		AC3384ED280801FB00835EF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3384EC280801FB00835EF4 /* Preview Assets.xcassets */; };
+		ACC9F99B28080CD500720F58 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99A28080CD500720F58 /* DetailScreen.swift */; };
+		ACC9F99F28080F2700720F58 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC9F99E28080F2700720F58 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,11 @@
 		AC3384E7280801F800835EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC3384E9280801FB00835EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3384EC280801FB00835EF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC3384F62808059600835EF4 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Regular.ttf"; path = "../../../Furniture-Shop-App-UI-SwiftUI-main/Furniture_app/Fonts/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		AC3384F72808059600835EF4 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplay-Bold.ttf"; path = "../../../Furniture-Shop-App-UI-SwiftUI-main/Furniture_app/Fonts/PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		AC3384F82808064100835EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ACC9F99A28080CD500720F58 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		ACC9F99E28080F2700720F58 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		AC3384E4280801F800835EF4 /* FurnitureApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC3384F82808064100835EF4 /* Info.plist */,
+				AC3384F52808056B00835EF4 /* Fonts */,
 				AC3384E5280801F800835EF4 /* FurnitureAppApp.swift */,
+				ACC9F99A28080CD500720F58 /* DetailScreen.swift */,
 				AC3384E7280801F800835EF4 /* ContentView.swift */,
+				ACC9F99E28080F2700720F58 /* HomeScreen.swift */,
 				AC3384E9280801FB00835EF4 /* Assets.xcassets */,
 				AC3384EB280801FB00835EF4 /* Preview Content */,
 			);
@@ -65,6 +76,15 @@
 				AC3384EC280801FB00835EF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC3384F52808056B00835EF4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC3384F72808059600835EF4 /* PlayfairDisplay-Bold.ttf */,
+				AC3384F62808059600835EF4 /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC9F99F28080F2700720F58 /* HomeScreen.swift in Sources */,
+				ACC9F99B28080CD500720F58 /* DetailScreen.swift in Sources */,
 				AC3384E8280801F800835EF4 /* ContentView.swift in Sources */,
 				AC3384E6280801F800835EF4 /* FurnitureAppApp.swift in Sources */,
 			);
@@ -270,8 +292,8 @@
 				DEVELOPMENT_TEAM = LU893QGJWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FurnitureApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,8 +321,8 @@
 				DEVELOPMENT_TEAM = LU893QGJWJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FurnitureApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
